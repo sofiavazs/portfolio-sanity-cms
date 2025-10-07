@@ -13,7 +13,8 @@ export default defineType({
     defineField({
       name: 'about',
       title: 'About',
-      type: 'text',
+      type: 'array',
+      of: [{type: 'block'}], // this makes it rich text!
     }),
     defineField({
       name: 'picture',
