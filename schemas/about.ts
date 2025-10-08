@@ -6,9 +6,30 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'upperText',
+      title: 'Upper Text',
+      type: 'text',
+    }),
+    defineField({
+      name: 'title',
+      title: 'Title',
+      type: 'text',
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'text',
+    }),
+    defineField({
       name: 'intro',
       title: 'Introduction',
       type: 'text',
+    }),
+    defineField({
+      name: 'links',
+      title: 'Links',
+      type: 'array',
+      of: [{type: 'string'}],
     }),
     defineField({
       name: 'about',

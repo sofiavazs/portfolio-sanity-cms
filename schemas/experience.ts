@@ -34,7 +34,7 @@ export default defineType({
       type: 'array',
       of: [
         defineField({
-          name: 'project',
+          name: 'projectName',
           title: 'Project',
           type: 'object',
           fields: [
